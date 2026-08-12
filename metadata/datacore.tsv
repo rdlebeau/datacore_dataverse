@@ -1,0 +1,22 @@
+#metadataBlock	name	dataverseAlias	displayName	blockURI												
+	customDataCore	DataCORE	DataCORE Dataverse													
+#datasetField	name	title	description	watermark	fieldType	displayOrder	displayFormat	advancedSearchField	allowControlledVocabulary	allowmultiples	facetable	displayoncreate	required	parent	metadatablock_id	termURI
+	methodology	Methodology	Explain the methods you used to collect and process the data included in this Work		text	0	#VALUE	TRUE	FALSE	FALSE	FALSE	TRUE	TRUE		customDataCore	
+	abstract	Abstract or Summary	Enter the abstract of the item below.		text	2	#VALUE	TRUE	FALSE	TRUE	FALSE	TRUE	TRUE		customDataCore	
+	resourceType	Resource Type	The file format and/or physical medium of datasets contained in the work.		text	1		TRUE	TRUE	TRUE	TRUE	TRUE	TRUE		customDataCore	
+	fundingAgency	Funding Agency	Select the primary funding agency that supported the research and data collection from the drop-down list.		text	3		TRUE	TRUE	TRUE	TRUE	TRUE	FALSE		customDataCore	
+	depositAgreement	Deposit Agreement	I have read and agree to the Deposit Agreement (https://datacore-dev.dlib.indiana.edu/agreement?locale=en#terms_of_use)		text	5		FALSE	TRUE	FALSE	FALSE	TRUE	TRUE		customDataCore	
+#controlledVocabulary	DatasetField	Value	identifier	displayOrder												
+	depositAgreement	Yes	yes	0												
+	fundingAgency	Centers for Disease Control and Prevention (CDC)	CDC	0												
+	fundingAgency	Department of Defense (DOD)	DOD	1												
+	fundingAgency	Department of Energy (DOE)	DOE	2												
+	fundingAgency	Department of Transportation (DOT)	DOT	3												
+	fundingAgency	Department of Transportation (DOT)	NASA	4												
+	fundingAgency	National Endowment for the Humanities (NEH)	NEH	5												
+	fundingAgency	National Institutes of Health (NIH)	NIH	6												
+	fundingAgency	National Science Foundation (NSF)	NSF	7												
+	fundingAgency	Other Funding Agency	other	8												
+	resourceType	Dataset	dataset	0												
+	resourceType	Software	software	1												
+	resourceType	Interactive Object	interactiveObject	2												
