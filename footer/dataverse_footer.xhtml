@@ -1,0 +1,87 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui"
+                xmlns:pt="http://xmlns.jcp.org/jsf/passthrough"
+                xmlns:jsf="http://xmlns.jcp.org/jsf"
+                xmlns:c="http://java.sun.com/jsp/jstl/core"
+                xmlns:o="http://omnifaces.org/ui"
+                xmlns:of="http://omnifaces.org/functions"
+                xmlns:iqbs="http://xmlns.jcp.org/jsf/composite/iqbs">
+    <style>
+      @media screen and (max-width: 350px) {
+        #dataverseFooter .line-break-small {
+            display: block;
+        }
+      }
+
+      @media screen and (max-width: 420px) {
+        #dataverseFooter .line-break {
+          display: block;
+        }
+        #dataverseFooter .hide-on-mobile {
+            display: none;
+        }
+      }
+
+      @media only screen and (min-width: 40em) {
+        #branding-bar .show-on-tablet {
+          display: inline;
+        }
+
+        #branding-bar .show-on-mobile,
+        #branding-bar .show-on-desktop {
+          display: none;
+        }
+      }
+
+      #dataverseFooter .signature-link img {
+        height: 35px;
+      }
+
+      #dataverseFooter .signature {
+        float: left;
+        padding-left: 1rem;
+      }
+
+      #dataverseFooter .copyright {
+        float: right;
+        padding-top: 1rem;
+      }
+
+      .dataverseFooterLogo {
+        padding: 0;
+      }
+    </style>
+    <div id="dataverseFooter">
+        <div id="branding-bar" class="container">
+            <div class="row">
+                <div class="dataverseFooterLogo col-xs-12">
+                    <div class="copyright">
+                        <span>
+                            <a href="https://libraries.indiana.edu/designated-archival-repository">Designated Archival Repository</a> |
+                        </span>
+                        <span class="line-break">
+                            <a href="https://accessibility.iu.edu/assistance/index.html" id="accessibility-link" title="Having trouble accessing this web page content? Please visit this page for assistance.">Accessibility</a>
+                            | <a href="https://libraries.indiana.edu/privacy" id="privacy-policy-link">Privacy Notice</a>
+                        </span>
+                        <span class="hide-on-mobile"> | </span>
+                        <a href="https://www.iu.edu/copyright/index.html">Copyright</a> &#169; 2026
+                        <span class="line-break-small">The Trustees of
+                            <a href="http://www.iu.edu">Indiana University</a>
+                        </span>
+                    </div>
+                    <div class="signature">
+                        <a href="https://www.iu.edu/index.html" class="signature-link">
+                            <img src="//assets.iu.edu/brand/3.3.x/iu-sig-formal.svg" alt="Indiana University"></img>
+                        </a>
+                    </div>
+                </div>
+             </div>
+         </div>
+      </div>
+    <footer>
+      <o:resourceInclude path="/CustomizationFilesServlet?customFileType=footer" rendered="#{!widgetView}"/>
+    </footer>
+</ui:composition>
